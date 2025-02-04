@@ -1,0 +1,166 @@
+/* Réinitialisation de base pour une meilleure compatibilité entre navigateurs */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Définir la police de base pour le site */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(45deg, #00bcd4, #ff4081);
+  color: #333; /* Texte gris foncé pour une meilleure lisibilité */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles pour le header */
+header {
+  background-color: rgba(0, 0, 0, 0.7); /* Ombre noire pour améliorer le contraste */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 4px solid #fff;
+}
+
+/* Style du titre principal */
+h1 {
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Styles pour les sections principales */
+main {
+  padding: 30px;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.9); /* Fond semi-transparent blanc pour contraster */
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Styliser les liens */
+a {
+  color: #ff4081;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00bcd4;
+}
+
+/* Styles pour la section d'accueil */
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #222; /* Légèrement plus sombre pour les sous-titres */
+}
+
+/* Formulaire de connexion */
+form {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+form:hover {
+  transform: translateY(-5px);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333; /* Texte des labels en gris foncé */
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  border-color: #ff4081;
+  outline: none;
+}
+
+form button {
+  background-color: #00bcd4;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ff4081;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+
+/* Animation d'apparition des éléments */
+.fade-in {
+  animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Ajouter des ombres sur les éléments interactifs */
+button,
+form input {
+  transition: all 0.3s ease;
+}
+
+button:hover,
+form input:focus {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styles pour les petites icônes (si nécessaire) */
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
